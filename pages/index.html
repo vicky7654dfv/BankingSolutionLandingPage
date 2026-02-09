@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Solutions | Next Gen Banking</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="header fade-in-element">
+        <div class="container">
+            <div class="logoContainer">
+                <a href="index.html" class="logo" id="logoLink">
+                    <div class="logoWrapper">
+                        <img src="../assets/Header/logo.webp" alt="Banking Solutions Logo" class="logoImage" onerror="this.src='https://placehold.co/140x140/0062ff/white?text=BS'">
+                        <div class="logoGlow"></div>
+                    </div>
+                    <div class="companyName">
+                        <span class="logoText">BANKING</span>
+                        <span class="logoTextAccent">SOLUTIONS</span>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="nav" id="navMenu">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="Error.html" class="navLink">
+                            <span class="navText">About</span>
+                            <span class="navHoverLine"></span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="Error.html" class="navLink">
+                            <span class="navText">Services</span>
+                            <span class="navHoverLine"></span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="Error.html" class="navLink">
+                            <span class="navText">Contact</span>
+                            <span class="navHoverLine"></span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <button class="signupButton" onclick="window.location.href='Error.html'">
+                            <span class="buttonText">Sign Up</span>
+                        </button>
+                    </li>
+                    <li class="navItem">
+                        <button class="loginButton" onclick="window.location.href='Error.html'">
+                            <span class="buttonText">Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="menuButton" id="menuButton" aria-label="Menu" aria-expanded="false">
+                <span class="menuBar"></span>
+                <span class="menuBar"></span>
+                <span class="menuBar"></span>
+            </button>
+        </div>
+
+        <div class="overlay" id="navOverlay"></div>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="../assets/Banner/bgVid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content fade-in-element">
+            <h1>Banking for the <span class="text-gradient">Digital Age</span></h1>
+            <p>Experience seamless transactions, smart savings, and instant loans with the security of a federal standard and the speed of modern fintech.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='Error.html'">Open Account</button>
+                <button class="btn-secondary" onclick="window.location.href='Error.html'">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" id="statsSection">
+        <div class="stats-container">
+            <div class="stat-box fade-in-element">
+                <h2 class="counter" data-target="15000000">0</h2>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-box fade-in-element">
+                <h2 class="counter" data-target="5000">0</h2>
+                <p>Branches Worldwide</p>
+            </div>
+            <div class="stat-box fade-in-element">
+                <h2 class="counter" data-target="99">0</h2>
+                <p>% Success Rate</p>
+            </div>
+            <div class="stat-box fade-in-element">
+                <h2 class="counter" data-target="24">0</h2>
+                <p>/7 Support</p>
+            </div>
+        </div>
+
+        <div class="stats-media-row fade-in-element">
+            <div class="stats-video-wrapper">
+                <div class="live-indicator">LIVE</div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hrCBglK7EFk?si=U0NKB4Jo-104nP8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="stats-text-content">
+                <h3>Global Banking Summit 2025</h3>
+                <p>Watch our CEO discuss the future of decentralized finance and how Banking Solutions is leading the charge in security and innovation. We are committed to transparency and growth.</p>
+                <ul class="stats-list">
+                    <li><i class="fas fa-check"></i> Real-time Analytics</li>
+                    <li><i class="fas fa-check"></i> Global Outreach Program</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="section-header fade-in-element">
+            <h2>Our Services</h2>
+            <p>Everything you need to manage your wealth.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in-element">
+                <img src="../assets/Services/1.webp" alt="Instant Pay" class="service-img">
+                <h3>Instant Pay</h3>
+                <p>Transfer money securely to anyone, anywhere instantly.</p>
+                <button class="btn-service" onclick="window.location.href='Error.html'">Learn More</button>
+            </div>
+            <div class="service-card fade-in-element">
+                <img src="../assets/Services/2.webp" alt="Investments" class="service-img">
+                <h3>Investments</h3>
+                <p>Grow your wealth with our AI-driven investment portfolios.</p>
+                <button class="btn-service" onclick="window.location.href='Error.html'">Learn More</button>
+            </div>
+            <div class="service-card fade-in-element">
+                <img src="../assets/Services/3.webp" alt="Secure Vault" class="service-img">
+                <h3>Secure Vault</h3>
+                <p>Bank-grade security for your digital assets and deposits.</p>
+                <button class="btn-service" onclick="window.location.href='Error.html'">Learn More</button>
+            </div>
+            <div class="service-card fade-in-element">
+                <img src="../assets/Services/4.webp" alt="Smart Cards" class="service-img">
+                <h3>Smart Cards</h3>
+                <p>Contactless payments with zero annual maintenance charges.</p>
+                <button class="btn-service" onclick="window.location.href='Error.html'">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-section">
+        <video autoplay muted loop playsinline class="jobs-video">
+            <source src="../assets/Team/teamVid.mp4" type="video/mp4">
+        </video>
+        <div class="jobs-overlay"></div>
+        
+        <div class="jobs-content-wrapper">
+            <div class="section-header fade-in-element" style="z-index: 2; position: relative;">
+                <h2>Join Our Team</h2>
+                <p>Build the future of finance with us.</p>
+            </div>
+
+            <div class="jobs-grid">
+                <div class="job-block fade-in-element">
+                    <h3>Tech & Innovation</h3>
+                    <p>Work with cutting-edge technologies in AI, Blockchain, and Cloud Computing to build secure banking infrastructures.</p>
+                    <button class="btn-primary" onclick="window.location.href='Error.html'">Apply Now</button>
+                </div>
+                <div class="job-block fade-in-element">
+                    <h3>Finance & Operations</h3>
+                    <p>Drive our global strategy, manage risk, and ensure operational excellence across all our worldwide branches.</p>
+                    <button class="btn-primary" onclick="window.location.href='Error.html'">View Openings</button>
+                </div>
+                <div class="job-block fade-in-element">
+                    <h3>Customer Success</h3>
+                    <p>Be the face of our brand. Help millions of customers navigate their financial journey with empathy and expertise.</p>
+                    <button class="btn-primary" onclick="window.location.href='Error.html'">Join Support</button>
+                </div>
+                <div class="job-block fade-in-element">
+                    <h3>Data Analysis</h3>
+                    <p>Utilize big data to predict market trends and provide personalized insights for our premium clients.</p>
+                    <button class="btn-primary" onclick="window.location.href='Error.html'">Explore Roles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payments-section">
+        <div class="container payments-container">
+            <div class="payments-text fade-in-element">
+                <h2>Seamless Transactions</h2>
+                <p class="subtitle">Experience the power of instant global payments. We connect you to the world economy.</p>
+                
+                <p class="payment-desc">
+                    Our infrastructure handles over 1 million secure transactions per second. Whether you are sending money to family abroad or paying vendors, our encrypted gateways ensure your money reaches its destination instantly.
+                </p>
+
+                <ul class="payment-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>UPI & IMPS</strong>
+                            <p>Instant real-time transfers 24/7.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Forex Transfers</strong>
+                            <p>Best rates for international remittances.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <div>
+                            <strong>Bill Payments</strong>
+                            <p>Automate your utility and credit card bills.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn-primary" onclick="window.location.href='Error.html'">Explore Payments</button>
+            </div>
+            
+            <div class="payments-video-wrapper fade-in-element">
+                <video autoplay muted loop playsinline class="payment-video">
+                    <source src="../assets/Payment/paymentVid.mp4" type="video/mp4">
+                </video>
+                <div class="payment-glow-border"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footerWrap">
+        <div class="box">
+            <div class="logoContainer">
+                <img src="../assets/Header/logo.webp" alt="Bank Logo" class="logoImg" onerror="this.src='https://placehold.co/140x140/0062ff/white?text=BS'">
+                </div>
+            <p>
+                Your trusted financial partner. We provide secure, innovative, 
+                and personalized banking solutions to help you achieve your 
+                financial goals and build a stable future.
+            </p>
+            <button class="aboutBtn" onclick="window.location.href='Error.html'">
+                Our Heritage <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="box">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="Error.html">About Us</a></li>
+                <li><a href="Error.html">Services</a></li>
+                <li><a href="Error.html">Dashboard</a></li>
+                <li><a href="Error.html">SignUp</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h4>Service Categories</h4>
+            <ul>
+                <li><a href="Error.html">FAQ</a></li>
+                <li><a href="Error.html">Login</a></li>
+                <li><a href="Error.html">Contact</a></li>
+                <li><a href="Error.html">Home 2</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h4>Headquarters</h4>
+            <ul class="contactInfo">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu 636008</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@thestackly.com
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    Mon - Fri: 09:00 AM - 07:00 PM
+                </li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h4>Connect With Us</h4>
+            <p>Stay updated with the latest financial news, market trends, and exclusive offers.</p>
+            <div class="media">
+                <a href="Error.html" class="socialLink" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="Error.html" class="socialLink" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="Error.html" class="socialLink" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="Error.html" class="socialLink" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottomFooter">
+        <p>© 2025 SecureBank Ltd. All rights reserved. Licensed by the Central Bank.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            /* 1. Mobile Menu Logic */
+            const menuButton = document.getElementById('menuButton');
+            const navMenu = document.getElementById('navMenu');
+            const navOverlay = document.getElementById('navOverlay');
+            const navLinks = document.querySelectorAll('.navLink, .signupButton, .loginButton'); 
+            let isMenuOpen = false;
+
+            const toggleMenu = () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    navMenu.classList.add('navActive');
+                    menuButton.classList.add('open');
+                    navOverlay.classList.add('active');
+                    menuButton.setAttribute('aria-expanded', 'true');
+                } else {
+                    closeMenu();
+                }
+            };
+
+            const closeMenu = () => {
+                isMenuOpen = false;
+                navMenu.classList.remove('navActive');
+                menuButton.classList.remove('open');
+                navOverlay.classList.remove('active');
+                menuButton.setAttribute('aria-expanded', 'false');
+            };
+
+            if(menuButton) {
+                menuButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleMenu();
+                });
+            }
+
+            if(navOverlay) {
+                navOverlay.addEventListener('click', closeMenu);
+            }
+
+            document.addEventListener('click', (event) => {
+                if (isMenuOpen && navMenu && !navMenu.contains(event.target) && menuButton && !menuButton.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    closeMenu();
+                });
+            });
+
+            /* 2. Scroll Animations */
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-element').forEach(el => {
+                observer.observe(el);
+            });
+
+            /* 3. Number Count Up */
+            const statsSection = document.getElementById('statsSection');
+            let counted = false;
+
+            const countUp = (element) => {
+                const targetText = element.getAttribute('data-target');
+                const target = parseInt(targetText);
+                const duration = 2000; 
+                const increment = target / (duration / 16); 
+
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        element.innerText = Math.ceil(current).toLocaleString();
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.innerText = parseInt(targetText).toLocaleString() + "+";
+                    }
+                };
+                updateCounter();
+            };
+
+            const statsObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !counted) {
+                    const counters = document.querySelectorAll('.counter');
+                    counters.forEach(counter => countUp(counter));
+                    counted = true;
+                }
+            }, { threshold: 0.5 });
+
+            if(statsSection) {
+                statsObserver.observe(statsSection);
+            }
+
+            /* 4. Scroll To Top */
+            const scrollTopBtn = document.getElementById('scrollToTopBtn');
+            if (scrollTopBtn) {
+                window.onscroll = () => {
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        scrollTopBtn.style.display = "block";
+                    } else {
+                        scrollTopBtn.style.display = "none";
+                    }
+                };
+                scrollTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

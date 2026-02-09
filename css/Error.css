@@ -1,0 +1,201 @@
+/* =========================================
+   1. Setup & Variables
+   ========================================= */
+:root {
+    --primary-color: #002D62;  /* Deep Federal Blue */
+    --accent-color: #D4AF37;   /* Federal Gold */
+    --secondary-blue: #0062ff; /* Tech Blue */
+    --bg-dark: #050505;
+    --text-light: #ffffff;
+    --text-gray: #d0d0d0;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-main);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Subtle radial gradient background */
+    background: radial-gradient(circle at center, #001f44 0%, var(--bg-dark) 70%);
+}
+
+/* =========================================
+   2. Container Styling
+   ========================================= */
+.error-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   3. Logo & Text
+   ========================================= */
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.error-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(0, 98, 255, 0.3));
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--secondary-blue), var(--accent-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    /* Big text with slight transparency */
+    color: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+/* Glitch/Glow Effect for 404 */
+.error-code::after {
+    content: '404';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.error-message {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.error-description {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   4. Buttons
+   ========================================= */
+.button-group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Shared Button Styles */
+.btn-back, .btn-home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Back Button (Secondary Style) */
+.btn-back {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-light);
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--text-light);
+    transform: translateX(-3px);
+}
+
+/* Home Button (Primary Style) */
+.btn-home {
+    background: var(--accent-color);
+    border: none;
+    color: #000; /* Black text for contrast on gold */
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-home:hover {
+    background: #F2C94C; /* Brighter gold */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+/* =========================================
+   5. Mobile Responsiveness
+   ========================================= */
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 6rem;
+    }
+    
+    .error-message {
+        font-size: 1.5rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .btn-back, .btn-home {
+        width: 100%;
+        justify-content: center;
+    }
+}
